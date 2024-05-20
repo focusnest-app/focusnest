@@ -1,0 +1,216 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+.app-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.app-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Main Styles */
+main {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  margin-bottom: 10px;
+}
+
+main p,
+main ul {
+  margin-bottom: 20px;
+  text-align: justify; /* Justify the text */
+}
+
+main h2 {
+  padding: 20px 0 10px; /* Increase top and bottom padding */
+}
+
+main h3 {
+  padding: 10px 0 5px; /* Increase top and bottom padding */
+}
+
+.effective-date {
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-size: 1.5em;
+  line-height: 1;
+  top: 0.1em;
+}
+
+/* Slide Menu Styles */
+.slide-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #d6e6f2; /* Updated background color */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.slide-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+.slide-menu a:hover {
+  color: #f1f1f1;
+}
+
+.slide-menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Contact Us Styles */
+.contact-us-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust height based on header */
+  text-align: center;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-icon {
+  font-size: 8em; /* Larger size for the icon */
+  color: #d6e6f2; /* Change icon color */
+  margin-bottom: 20px;
+}
+
+.contact-us-container p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 959px) {
+  .header-right {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-left {
+    margin-left: 20px;
+  }
+
+  .hamburger-menu {
+    position: center;
+    right: 20px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .email-icon {
+    font-size: 5em; /* Smaller size for mobile */
+  }
+
+  .contact-us-container p {
+    font-size: 1em; /* Responsive font size for mobile */
+  }
+}
