@@ -52,7 +52,7 @@ header {
 }
 
 .app-icon {
-  width: 40px;
+  width: 35px;
   height: 40px;
   margin-right: 10px;
 }
@@ -65,10 +65,10 @@ header {
 /* Main Styles */
 main {
   margin-top: 20px;
-  background-color: white;
+  background-color: transparent; /* Set to transparent or match the body's background */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* Removes rounding of corners */
+  box-shadow: none; /* Removes shadow */
 }
 
 main h1 {
@@ -78,7 +78,6 @@ main h1 {
 main p,
 main ul {
   margin-bottom: 20px;
-  text-align: justify; /* Justify the text */
 }
 
 main h2 {
@@ -191,10 +190,6 @@ ul li::before {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .header-left {
-    margin-left: 20px;
   }
 
   .hamburger-menu {
